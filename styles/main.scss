@@ -1,0 +1,440 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+@mixin size($height, $width) {
+  height: $height;
+  width: $width;
+}
+
+.hero {
+  height: 700px;
+  background: {
+    image: url("../img/hero-img.png");
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  }
+  color: #ffffff;
+  padding-top: 40px;
+
+  &__header {
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  &__outline {
+    @include size(36px, 90px);
+    border: 1px solid #ffffff;
+  }
+
+  &__heading {
+    font: {
+      weight: bold;
+      size: 52;
+    }
+    margin: 153px auto 28px;
+  }
+
+  &__second-heading {
+    font: {
+      family: "Roboto", sans-serif;
+      size: 20px;
+      weight: 300;
+    }
+    margin-bottom: 33px;
+  }
+
+  &__main-button {
+    @include size(40px, 230px);
+    font: {
+      weight: bold;
+      size: 14px;
+    }
+    background-color: #ff4e50;
+    margin: 0 auto;
+  }
+}
+
+.section_heading {
+  font: {
+    weight: bold;
+    size: 26px;
+  }
+  margin-bottom: 35px;
+}
+
+.light_text {
+  font: {
+    family: "Roboto", sans-serif;
+    size: 14px;
+    weight: 300;
+  }
+}
+
+.about {
+  padding: 89px 0 95px;
+  width: 65%;
+  margin: 0 auto;
+
+  &__heading {
+    @extend .section_heading;
+  }
+
+  &__card {
+    height: 400px;
+    margin: 0 10px;
+    background: {
+      image: url("../img/about-img-1.png");
+      size: cover;
+      position: center;
+      repeat: no-repeat;
+    }
+    color: #ffffff;
+
+    &__button {
+      @include size(20px, 70px);
+      font: {
+        weight: 400;
+        size: 10px;
+      }
+      background: #ff4e50;
+      padding: 0;
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+
+    &__heading {
+      font: {
+        size: 24px;
+        weight: bold;
+      }
+    }
+
+    &__text {
+      @extend .light_text;
+    }
+  }
+
+  &__card.card-2 {
+    background-image: url("../img/about-img-2.png");
+  }
+
+  &__card.card-3 {
+    background-image: url("../img/about-img-3.png");
+  }
+}
+
+.partners {
+  width: 65%;
+  margin: 0 auto;
+
+  &__heading {
+    @extend .section_heading;
+  }
+
+  &__avatar {
+    @include size(120px, 120px);
+    background: {
+      image: url("../img/avatar-1.png");
+      size: cover;
+      position: center;
+      repeat: no-repeat;
+    }
+    margin: 0 auto;
+  }
+
+  &__avatar.avatar-2 {
+    background-image: url("../img/avatar-2.png");
+  }
+
+  &__avatar.avatar-3 {
+    background-image: url("../img/avatar-3.png");
+  }
+
+  &__avatar.avatar-4 {
+    background-image: url("../img/avatar-4.png");
+  }
+
+  &__name {
+    font: {
+      size: 14px;
+      weight: bold;
+    }
+    margin-top: 17px;
+  }
+
+  &__text {
+    @extend .light_text;
+    margin-top: 12px;
+  }
+
+  &__button {
+    @include size(40px, 220px);
+    color: #ff4e50;
+    font: {
+      size: 12;
+      weight: bold;
+    }
+    border: 2px solid #ff4e50;
+    margin: 35px auto 115px;
+  }
+}
+
+.activity {
+  width: 70%;
+  margin: 0 auto;
+
+  &__heading {
+    @extend .section_heading;
+  }
+
+  &__cards {
+    margin-bottom: 90px;
+  }
+
+  &__card {
+    height: 310px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+
+    background: {
+      image: url("../img/activity-1.png");
+      size: cover;
+      position: center;
+      repeat: no-repeat;
+    }
+
+    font: {
+      size: 22px;
+      weight: bold;
+    }
+  }
+
+  &__card.card-2 {
+    background-image: url("../img/activity-2.png");
+  }
+
+  &__card.card-3 {
+    background-image: url("../img/activity-3.png");
+  }
+
+  &__card.card-4 {
+    background-image: url("../img/activity-4.png");
+  }
+
+  &__card.card-5 {
+    background-image: url("../img/activity-5.png");
+  }
+
+  &__card.card-6 {
+    background-image: url("../img/activity-6.png");
+  }
+
+  &__card.card-7 {
+    background-image: url("../img/activity-7.png");
+  }
+
+  &__text {
+    font: {
+      size: 18px;
+      family: "Roboto", sans-serif;
+      weight: 300;
+    }
+  }
+
+  &__form {
+    text-align: center;
+    margin-bottom: 100px;
+
+    &__input {
+      @include size(40px, 300px);
+      border: 1px solid #d4d4d4;
+      padding-left: 15px;
+      margin-right: 10px;
+
+      &::placeholder {
+        @extend .light_text;
+        color: #d4d4d4;
+      }
+    }
+
+    &__submit {
+      @include size(40px, 175px);
+      background: #ff4e50;
+      color: #ffffff;
+      border: none;
+      font: {
+        size: 14px;
+        weight: bold;
+      }
+    }
+  }
+}
+
+.footer {
+  border-top: 2px solid #ff4e50;
+  padding: 35px 0;
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    color: #ff4e50;
+
+    font: {
+      size: 16px;
+      weight: 400;
+    }
+  }
+
+  &__head {
+    color: #444444;
+    font: {
+      weight: bold;
+      size: 14px;
+    }
+  }
+
+  &__text {
+    color: #999999;
+    font: {
+      family: "Roboto", sans-serif;
+      weight: 300;
+      size: 14px;
+    }
+  }
+
+  &__designed {
+    color: #cccccc;
+    font: {
+      size: 10px;
+      weight: bold;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .about {
+    width: 100%;
+  }
+
+  .partners {
+    width: 100%;
+  }
+
+  .activity {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero {
+    height: 540px;
+
+    &__small-name {
+      margin-top: 97px;
+      font: {
+        weight: bold;
+        size: 20px;
+      }
+    }
+
+    &__heading {
+      margin-top: 26px;
+      font-size: 30px;
+    }
+
+    &__second-heading {
+      font-size: 18px;
+      width: 280px;
+    }
+
+    &__main-button {
+      width: 280px;
+    }
+  }
+
+  .about {
+    padding: 35px 0 35px;
+
+    &__heading {
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    &__card {
+      height: 300px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .partners {
+    &__heading {
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+
+    &__button {
+      width: 280px;
+      margin: 35px auto;
+    }
+  }
+
+  .activity {
+    &__heading {
+      margin-bottom: 15px;
+      font-size: 22px;
+      width: 280px;
+    }
+
+    &__card {
+      height: 120px;
+    }
+
+    &__cards {
+      margin-bottom: 35px;
+    }
+
+    &__heading {
+      margin: 0 auto 9px;
+    }
+
+    &__form {
+      margin-bottom: 40px;
+
+      &__input {
+        margin: 0 auto 10px;
+        width: 280px;
+      }
+
+      &__submit {
+        width: 280px;
+      }
+    }
+  }
+
+  .footer {
+    &__container {
+      text-align: center;
+    }
+
+    &__text {
+      margin: 0 5px 6px;
+    }
+  }
+}

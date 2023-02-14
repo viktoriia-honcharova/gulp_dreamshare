@@ -1,0 +1,334 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero {
+  height: 700px;
+  background-image: url("../img/hero-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding-top: 40px;
+}
+.hero__header {
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero__name {
+  font-weight: bold;
+  font-size: 20px;
+}
+.hero__outline {
+  height: 36px;
+  width: 90px;
+  border: 1px solid #ffffff;
+}
+.hero__heading {
+  font-weight: bold;
+  font-size: 52;
+  margin: 153px auto 28px;
+}
+.hero__second-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 33px;
+}
+.hero__main-button {
+  height: 40px;
+  width: 230px;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #ff4e50;
+  margin: 0 auto;
+}
+
+.section_heading, .activity__heading, .partners__heading, .about__heading {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 35px;
+}
+
+.activity__form__input::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.activity__form__input:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.light_text, .activity__form__input::placeholder, .partners__text, .about__card__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.about {
+  padding: 89px 0 95px;
+  width: 65%;
+  margin: 0 auto;
+}
+.about__card {
+  height: 400px;
+  margin: 0 10px;
+  background-image: url("../img/about-img-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.about__card__button {
+  height: 20px;
+  width: 70px;
+  font-weight: 400;
+  font-size: 10px;
+  background: #ff4e50;
+  padding: 0;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+.about__card__heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+.about__card.card-2 {
+  background-image: url("../img/about-img-2.png");
+}
+.about__card.card-3 {
+  background-image: url("../img/about-img-3.png");
+}
+
+.partners {
+  width: 65%;
+  margin: 0 auto;
+}
+.partners__avatar {
+  height: 120px;
+  width: 120px;
+  background-image: url("../img/avatar-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.partners__avatar.avatar-2 {
+  background-image: url("../img/avatar-2.png");
+}
+.partners__avatar.avatar-3 {
+  background-image: url("../img/avatar-3.png");
+}
+.partners__avatar.avatar-4 {
+  background-image: url("../img/avatar-4.png");
+}
+.partners__name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 17px;
+}
+.partners__text {
+  margin-top: 12px;
+}
+.partners__button {
+  height: 40px;
+  width: 220px;
+  color: #ff4e50;
+  font-size: 12;
+  font-weight: bold;
+  border: 2px solid #ff4e50;
+  margin: 35px auto 115px;
+}
+
+.activity {
+  width: 70%;
+  margin: 0 auto;
+}
+.activity__cards {
+  margin-bottom: 90px;
+}
+.activity__card {
+  height: 310px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  background-image: url("../img/activity-1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 22px;
+  font-weight: bold;
+}
+.activity__card.card-2 {
+  background-image: url("../img/activity-2.png");
+}
+.activity__card.card-3 {
+  background-image: url("../img/activity-3.png");
+}
+.activity__card.card-4 {
+  background-image: url("../img/activity-4.png");
+}
+.activity__card.card-5 {
+  background-image: url("../img/activity-5.png");
+}
+.activity__card.card-6 {
+  background-image: url("../img/activity-6.png");
+}
+.activity__card.card-7 {
+  background-image: url("../img/activity-7.png");
+}
+.activity__text {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.activity__form {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.activity__form__input {
+  height: 40px;
+  width: 300px;
+  border: 1px solid #d4d4d4;
+  padding-left: 15px;
+  margin-right: 10px;
+}
+.activity__form__input::-moz-placeholder {
+  color: #d4d4d4;
+}
+.activity__form__input:-ms-input-placeholder {
+  color: #d4d4d4;
+}
+.activity__form__input::placeholder {
+  color: #d4d4d4;
+}
+.activity__form__submit {
+  height: 40px;
+  width: 175px;
+  background: #ff4e50;
+  color: #ffffff;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer {
+  border-top: 2px solid #ff4e50;
+  padding: 35px 0;
+}
+.footer__container {
+  width: 80%;
+  margin: 0 auto;
+}
+.footer__heading {
+  color: #ff4e50;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer__head {
+  color: #444444;
+  font-weight: bold;
+  font-size: 14px;
+}
+.footer__text {
+  color: #999999;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+.footer__designed {
+  color: #cccccc;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 990px) {
+  .about {
+    width: 100%;
+  }
+  .partners {
+    width: 100%;
+  }
+  .activity {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .hero {
+    height: 540px;
+  }
+  .hero__small-name {
+    margin-top: 97px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .hero__heading {
+    margin-top: 26px;
+    font-size: 30px;
+  }
+  .hero__second-heading {
+    font-size: 18px;
+    width: 280px;
+  }
+  .hero__main-button {
+    width: 280px;
+  }
+  .about {
+    padding: 35px 0 35px;
+  }
+  .about__heading {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  .about__card {
+    height: 300px;
+    margin-bottom: 10px;
+  }
+  .partners__heading {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+  .partners__button {
+    width: 280px;
+    margin: 35px auto;
+  }
+  .activity__heading {
+    margin-bottom: 15px;
+    font-size: 22px;
+    width: 280px;
+  }
+  .activity__card {
+    height: 120px;
+  }
+  .activity__cards {
+    margin-bottom: 35px;
+  }
+  .activity__heading {
+    margin: 0 auto 9px;
+  }
+  .activity__form {
+    margin-bottom: 40px;
+  }
+  .activity__form__input {
+    margin: 0 auto 10px;
+    width: 280px;
+  }
+  .activity__form__submit {
+    width: 280px;
+  }
+  .footer__container {
+    text-align: center;
+  }
+  .footer__text {
+    margin: 0 5px 6px;
+  }
+}/*# sourceMappingURL=main.css.map */
