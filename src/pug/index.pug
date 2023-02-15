@@ -1,0 +1,98 @@
+extends common/layout
+
+block content 
+	main
+  .about
+    h2.about__heading.text-center How Dreamshare works?
+    .container-fluid
+      .row
+        .col-12.col-md-4
+          .about__card.card-1.rounded-1.p-3.d-flex.flex-column.justify-content-end
+            button.about__card__button.btn.text-light.rounded-5
+              | STEP 1
+            h3.about__card__heading Sed leo enim, condimentum
+            p.about__card__text
+              | Quisque libero libero, dictum non turpis in, luctus semper
+              | lorem. Donec rhoncus a leo sit amet facilisis.
+        .col-12.col-md-4
+          .about__card.card-2.rounded-1.p-3.d-flex.flex-column.justify-content-end
+            button.about__card__button.btn.text-light.rounded-5
+              | STEP 2
+            h3.about__card__heading Morbi velit risus
+            p.about__card__text
+              | Nulla venenatis tempor dui in molestie. Nulla quis dictum
+              | purus, sit amet porttitor est.
+        .col-12.col-md-4
+          .about__card.card-3.rounded-1.p-3.d-flex.flex-column.justify-content-end
+            button.about__card__button.btn.text-light.rounded-5
+              | STEP 3
+            h3.about__card__heading Sed leo enim, condimentum
+            p.about__card__text
+              | Quisque libero libero, dictum non turpis in, luctus semper
+              | lorem. Donec rhoncus a leo sit amet facilisis.
+  .partners
+    .container
+      h2.partners__heading.text-center
+        | Meet a partner for your best holiday
+      .row
+        .col-12.col-sm-6.col-lg-3
+          .partners__avatar.avatar-1
+          h3.partners__name.text-center Bradley Hunter
+          p.partners__text.text-center
+            | Based in Chicago. I love playing tennis and loud music.
+        .col-12.col-sm-6.col-lg-3
+          .partners__avatar.avatar-2
+          h3.partners__name.text-center Marie Bennett
+          p.partners__text.text-center
+            | Currently living in Colorado. Lover of art, languages and
+            | travelling.
+        .col-12.col-sm-6.col-lg-3
+          .partners__avatar.avatar-3
+          h3.partners__name.text-center Diana Wells
+          p.partners__text.text-center
+            | Living in Athens, Greece. I love black and white classics,
+            | chillout music and green tea.
+        .col-12.col-sm-6.col-lg-3
+          .partners__avatar.avatar-4
+          h3.partners__name.text-center Christopher Pierce
+          p.partners__text.text-center
+            | Star Wars fanatic. I have a persistent enthusiasm to create new
+            | things.
+      a.partners__button.btn.d-block.rounded-5(href='#') See other partners
+  .activity
+    .container
+      h2.activity__heading.text-center
+        | Discover holiday activity ideas
+      .activity__cards
+        .row
+          .col-12.col-sm-4.p-0
+            .activity__card.card-1.rounded-1
+              | Sports and Activis
+          .col-12.col-sm-4.p-0
+            .activity__card.card-2.rounded-1
+              | Wellness and Health
+          .col-12.col-sm-4.p-0
+            .activity__card.card-3.rounded-1
+              | Extreme Sports
+              br
+              |                   and Expeditions
+        .row
+          .col-12.col-sm-4.p-0
+            .activity__card.card-4.rounded-1 Games
+          .col-12.col-sm-8.p-0
+            .activity__card.card-5.rounded-1
+              | Culture and Education
+        .row
+          .col-12.col-sm-8.p-0
+            .activity__card.card-6.rounded-1
+              | Enjomet and Relaxation
+          .col-12.col-sm-4.p-0
+            .activity__card.card-7.rounded-1 Trevelling
+      h2.activity__heading.text-center
+        | Crate your holiday activity
+      div
+        p.activity__text.text-center
+          | Hi! What are your holiday interests?
+        form.activity__form
+          input.activity__form__input.rounded-1(type='text', placeholder='Enter your insterests')
+          input.activity__form__submit.rounded-5(type='submit', value='Search partners')
